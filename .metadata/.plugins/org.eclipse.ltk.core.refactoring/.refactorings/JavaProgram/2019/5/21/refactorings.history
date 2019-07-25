@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.testing.program.Overridding.java&apos; to &apos;A.java&apos;&#x0D;&#x0A;- Original project: &apos;JavaProgram&apos;&#x0D;&#x0A;- Original element: &apos;com.testing.program.Overridding.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.testing.program.A.java&apos;" description="Rename compilation unit &apos;Overridding.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.testing.program{Overridding.java" name="A.java" references="false" stamp="1558618162964" version="1.0"/>
+</session>

@@ -1,0 +1,24 @@
+package com.testing.program;
+
+import java.util.Stack;
+
+public class QueueImplementaionByTwoStack {
+	
+	      Stack<Integer> s1;
+	      Stack<Integer> s2;
+	
+	      public QueueImplementaionByTwoStack(){
+	    	  s1= new Stack<Integer>();
+	    	  s2= new Stack<Integer>();  
+	      }
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

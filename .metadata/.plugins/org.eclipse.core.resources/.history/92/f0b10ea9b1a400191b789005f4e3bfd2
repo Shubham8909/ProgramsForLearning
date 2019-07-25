@@ -1,0 +1,7 @@
+package com.testing.program;
+
+public class BoomClass implements Boom {
+	
+	
+
+}

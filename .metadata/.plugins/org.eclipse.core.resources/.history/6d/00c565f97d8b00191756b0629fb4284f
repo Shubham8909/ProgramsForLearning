@@ -1,0 +1,64 @@
+package com.testing.program;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class QueueImplementaionByTwoStack {
+	
+	     Stack<Integer> s1;
+	      Stack<Integer> s2;
+	
+	      public QueueImplementaionByTwoStack(){
+	    	  s1= new Stack<Integer>();
+	    	  s2= new Stack<Integer>();  
+	      }
+	      
+	      public boolean enQueue(int data){
+	    	  if(s1.size()==0){
+	    		  s1.add(data);
+	    		  return true;
+	    	  }else{
+	    		  int l= s1.size();
+	    		  for(int i= 0; i<l; i++){
+	    			  s2.add(s1.pop());
+	    		  }
+	    		  s1.add(data);
+	    		  for(int i= 0; i<l; i++){
+	    			  s1.add(s2.pop());
+	    		  }
+	    		  
+
+		    	  return true;
+	    	  }
+	    	  
+	      }
+	
+	      public int dequeue(){
+	    	  if(s1.size()==0){
+	    		  return 0;
+	    	  }else{
+	    		  return s1.pop();
+	    	  }
+	    	  
+	      }
+	
+	
+	
+
+	public static void main(String[] args) {
+		 
+		///Queue<Integer> s1= new LinkedList<>();
+	    Stack<Integer> s1= new Stack<>();
+		s1.add(1);
+		s1.add(2);
+		s1.add(3);
+		s1.add(4);
+		s1.add(5);
+		
+		System.out.println();
+		
+
+	}
+
+}

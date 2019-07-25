@@ -1,0 +1,14 @@
+package com.testing.program;
+
+public class Mythread extends Thread {
+	
+	Display d;
+	String name;
+	public Mythread(String name){
+		this.name=name;
+	}
+	public void run(){	
+		d.printName(name);
+	}
+
+}

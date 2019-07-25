@@ -1,0 +1,7 @@
+package com.testing.program;
+
+import java.util.Comparator;
+
+public class Mycomparator implements Comparator<? super String> {
+
+}

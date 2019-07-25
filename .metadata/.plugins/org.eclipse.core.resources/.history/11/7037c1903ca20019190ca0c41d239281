@@ -1,0 +1,14 @@
+package com.testing.program;
+
+public class Example1 {
+	
+	int x;
+	
+	public String getValue(){
+		return "This is the value"+ x ;
+	}
+public static void main(String[] args) {
+	Example1 e= new Example1();
+	System.out.println(e.getValue());
+}
+}

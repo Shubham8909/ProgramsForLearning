@@ -1,0 +1,16 @@
+package com.testing.program;
+
+public class Display {
+	
+	public void printName(String name){
+		
+		for(int i=0; i<10;i++){
+			
+			System.out.print("Gud Morning Bro");
+			
+			Thread.sleep(1000);
+		}
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.testing.program;
+
+public class ParentClass {
+	int k=20;
+	int i=60;
+	public ParentClass(){
+		System.out.println("I am from Parent class");
+	}
+
+}

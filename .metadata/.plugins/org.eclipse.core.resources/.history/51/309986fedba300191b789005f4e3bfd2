@@ -1,0 +1,44 @@
+package com.testing.program;
+
+public class Example1 {
+
+	
+/*	char c='U';
+	
+      
+    // static block 
+    static { 
+        System.out.println("Inside static block"); 
+    } 
+  
+    Example1(){
+    	System.out.println("Constructor call"); 
+    }
+    {
+    	System.out.println("Inside instance intialization  block"); 
+    }
+ // static variable 
+    static int a = m1();
+    // static method 
+    static int m1() { 
+        System.out.println("from m1"); 
+        return 20; 
+    } 
+      */
+    // static method(main !!) 
+    public static void main(String[] args) 
+    { 
+    	int x=1;
+   	int [] arr= new int[10];
+   	
+   	for(int i=1; i<=10; i++){
+   		arr[x]=i;
+   		x++;
+   	}
+   System.out.println(arr.length);
+
+    	Example1 e= new Example1();
+
+       System.out.println("from main"); 
+    } 
+}

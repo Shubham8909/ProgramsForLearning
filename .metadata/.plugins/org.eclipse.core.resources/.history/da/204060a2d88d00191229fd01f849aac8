@@ -1,0 +1,23 @@
+package com.testing.program;
+
+public class LearningPrivateClass {
+	
+	int i=10;
+	
+	public class B{
+		
+		int j=20;
+		
+	}
+
+}
+
+class Ptest{
+	public static void main(String[] args) {
+		
+		LearningPrivateClass l= new LearningPrivateClass();
+		LearningPrivateClass.B b= l.new B();
+	    System.out.println(b.j);
+	}
+	
+}

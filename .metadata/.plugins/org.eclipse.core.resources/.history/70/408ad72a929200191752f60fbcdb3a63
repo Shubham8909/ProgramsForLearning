@@ -1,0 +1,21 @@
+package com.testing.program;
+
+public class StringLearn {
+
+	public static void main(String[] args) {
+	
+		/*
+		String s1= new String("Shubham");
+		String s="Shubham";
+		String s2="Shubham";		
+		
+		System.out.println(s==(s2));*/
+		
+		Integer i=5;
+		Integer y=5;
+		
+		System.out.println(i==y);
+
+	}
+
+}

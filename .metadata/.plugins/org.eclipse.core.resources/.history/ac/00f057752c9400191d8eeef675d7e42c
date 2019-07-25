@@ -1,0 +1,11 @@
+package com.testing.program;
+
+public class Print123Using3Thread {
+
+	public static void main(String[] args) {
+		
+		Thread t= new Thread(new Print123Class())
+
+	}
+
+}

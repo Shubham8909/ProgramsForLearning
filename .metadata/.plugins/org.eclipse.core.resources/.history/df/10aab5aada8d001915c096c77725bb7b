@@ -1,0 +1,24 @@
+package com.testing.program;
+
+public  class LearningPrivateClass {
+	
+	int i=10;
+	
+	public static class B{
+		
+		int j=20;
+		
+	}
+
+}
+
+class Ptest{
+	public static void main(String[] args) {
+		
+		///LearningPrivateClass l= new LearningPrivateClass();
+	///	System.out.println(l.i);
+		LearningPrivateClass.B b= new LearningPrivateClass.B();
+	    System.out.println("afvdasfsh"+b.j);
+	}
+	
+}

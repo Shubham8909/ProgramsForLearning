@@ -1,0 +1,8 @@
+package com.testing.program;
+
+public final class CustomClass {
+	
+	private final String name;
+	private final Adress address;
+
+}

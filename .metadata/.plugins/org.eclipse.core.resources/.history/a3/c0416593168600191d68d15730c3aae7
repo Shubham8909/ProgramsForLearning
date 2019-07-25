@@ -1,0 +1,14 @@
+package com.testing.program1;
+
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class ConcurrentThread extends Thread{
+	
+	static CopyOnWriteArrayList<Integer> c= new CopyOnWriteArrayList<>();
+	
+	public void run(){
+		
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringSecurityApp"/>
+<aop-project name="demoAuth"/>
+<aop-project name="HibernateDemo"/>
+<aop-project name="RestFulTest"/>
+</aop-reference-model>

@@ -1,0 +1,39 @@
+package com.testing.program;
+
+public class SortingInOneIteration {
+	
+	
+	public void sortingInOneIteration( int [] arr){
+		
+		int n= arr.length;
+		int j=-1;
+		for(int i=0; i<n; i++){
+			if(arr[i]<1){
+				j++;
+				int temp=arr[j];
+				arr[j]=arr[i];
+				arr[i]= temp;
+			}
+			
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		SortingInOneIteration s= new SortingInOneIteration();
+		
+		int [] arr= {1, 0 , 1, 1, 0 ,1 , 1 ,0, 1,0, 1, 1, 0, 0, 0};
+		
+		s.sortingInOneIteration(arr);
+		
+		for(int i=0; i<arr.length;i++){
+			if(i<arr.length-1)
+			System.out.print(arr[i]+", ");
+			else{
+				System.out.print(arr[i]+" ");
+			}
+		}
+		
+	}
+
+}

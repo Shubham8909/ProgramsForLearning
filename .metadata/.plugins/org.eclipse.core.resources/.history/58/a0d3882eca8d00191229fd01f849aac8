@@ -1,0 +1,28 @@
+package com.testing.program;
+
+public final class CustomClass {
+	
+	private final String name;
+	private final Adress address;
+
+	public CustomClass(String name ,Adress address){
+		
+		this.name=name;
+		this.address= new Adress(address.getAdName());
+		
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public Adress getAddress() {
+		return new Adress(address.getAdName());
+	}
+
+	@Override
+	public String toString() {
+		return "CustomClass [name=" + name + ", address=" + address + "]";
+	}
+	
+}

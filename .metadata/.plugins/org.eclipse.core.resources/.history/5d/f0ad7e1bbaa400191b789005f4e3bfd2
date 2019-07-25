@@ -1,0 +1,12 @@
+package com.testing.program;
+
+public class BoomClass2 {
+	 int m = 1111;
+	 
+	    {
+	        m = m++;
+	 
+	        System.out.println(m);
+	    }
+
+}

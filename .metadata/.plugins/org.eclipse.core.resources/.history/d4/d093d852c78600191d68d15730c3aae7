@@ -1,0 +1,24 @@
+package com.project.RestFulTest;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
+import org.springframework.web.multipart.support.StandardServletMultipartResolver;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+@Configuration
+@ComponentScan({ "com.ge.corporate.search.*" })
+public class AppConfig extends WebMvcConfigurerAdapter {
+	
+	@Bean
+	static PropertySourcesPlaceholderConfigurer propertyPlaceHolderConfigurer() {
+		return new PropertySourcesPlaceholderConfigurer();
+	}
+
+	@Bean
+	public StandardServletMultipartResolver multipartConfig() {
+		return new StandardServletMultipartResolver();
+	}
+
+}

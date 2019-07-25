@@ -1,0 +1,33 @@
+package com.testing.program1;
+
+import java.util.ArrayList;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class ConcurrentTest {
+	
+	public static void main(String[] args) 
+	{
+		
+
+		CopyOnWriteArrayList<Integer> c= new CopyOnWriteArrayList<>();
+		
+		c.addIfAbsent(1);
+		
+		c.addIfAbsent(2);
+		
+		c.addIfAbsent(2);
+		
+		c.addIfAbsent(1);
+		
+		
+		Integer arr[]= {1,2,3,5,8,8,8};
+		
+		CopyOnWriteArrayList<Integer> c1= new CopyOnWriteArrayList<>(arr);
+		
+		System.out.println( c);
+		System.out.println( c1);
+		
+		
+	}
+
+}

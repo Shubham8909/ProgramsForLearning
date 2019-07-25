@@ -1,0 +1,16 @@
+package com.testing.program;
+
+public class TestClass1 {
+   
+	public TestClass1(){
+		System.out.println("Rolla");
+	}
+	TestClass1 t= new TestClass1();
+	
+	public static void main(String[] args) {
+	
+		TestClass1 t= new TestClass1();
+
+	}
+
+}

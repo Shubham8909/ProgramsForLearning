@@ -1,0 +1,36 @@
+package com.testing.program;
+
+import java.util.NavigableSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class ExampleForNavigaleset {
+
+	public static void main(String[] args) {
+	
+		NavigableSet<Integer> t= new TreeSet<>();
+		t.add(3000);
+		t.add(1000);
+		t.add(2000);
+		t.add(4000);
+		t.add(5000);
+		for(Integer i:t){
+	    	  System.out.println(i);
+	      }
+		Set<Integer> t1=(Set<Integer>) t.descendingSet();
+		      for(Integer i:t1){
+		    	  System.out.println(i);
+		      }
+		      
+		System.out.println(t.size());
+
+		System.out.println(t.floor(5000));
+		System.out.println(t.lower(5000));
+		System.out.println(t.ceiling(2900));
+		System.out.println(t.higher(3000));
+		System.out.println(t.pollFirst());
+		System.out.println(t.size());
+
+	}
+
+}

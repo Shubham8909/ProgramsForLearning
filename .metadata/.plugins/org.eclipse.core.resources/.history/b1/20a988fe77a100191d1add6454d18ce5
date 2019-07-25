@@ -1,0 +1,6 @@
+package com.testing.program;
+
+public interface Connection1 {
+	
+	public void getName();
+}

@@ -1,0 +1,72 @@
+package com.testing.program;
+
+public class Print123Class implements Runnable{
+	
+	int threadID;
+	static Object obj= new Object();
+	static int count=0;
+	static boolean one= true;
+	static boolean two= false;
+	static boolean three= false;
+
+	public Print123Class(int threadID){
+		this.threadID=threadID;
+	}
+	@Override
+	public void run() {
+		print();
+	}
+	private void print() {
+		try{
+	while(true){
+			Thread.sleep(1000);
+		synchronized (obj) {
+			if(threadID==1){
+				if(!one){
+					this.wait();
+				}else{
+				/*	count++;
+					System.out.println(count);*/
+					System.out.println(threadID);
+					one=false;
+					two=true;
+					three= false;
+					this.notifyAll();
+				}
+			}
+			
+			if(threadID==2){
+				if(!two){
+					this.wait();
+				}else{
+					/*count++;
+					System.out.println(count);*/
+					System.out.println(threadID);
+					one=false;
+					two=false;
+					three= true;
+					this.notifyAll();
+				}
+			}
+			if(threadID==3){
+				if(!three){
+					this.wait();
+				}else{
+				/*	count++;
+					System.out.println(count);*/
+					System.out.println(threadID);
+					one=true;
+					two=false;
+					three= false;
+					this.notifyAll();
+				}
+			}
+		 }
+		}
+		}catch(InterruptedException  e){
+			 e.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.testing.program;
+
+public class StringLearn {
+
+	public static void main(String[] args) {
+	
+		String s="Shubham";
+		 s="Verma";
+		
+		System.out.println(s);
+
+	}
+
+}

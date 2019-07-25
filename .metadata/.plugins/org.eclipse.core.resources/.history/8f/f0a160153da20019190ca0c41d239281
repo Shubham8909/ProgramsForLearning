@@ -1,0 +1,9 @@
+package com.testing.program;
+
+public class Example1 {
+	
+  int x=0;
+  {
+	  int x=10;
+  }
+}

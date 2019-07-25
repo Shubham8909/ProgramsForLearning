@@ -1,0 +1,10 @@
+package com.testing.program;
+
+public class Create5Object {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

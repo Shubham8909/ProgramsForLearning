@@ -1,0 +1,15 @@
+package com.testing.program;
+
+public class SynchronizedTest {
+
+	public static void main(String[] args) {
+		 Display d= new Display(); 
+// Display d1= new Display();
+		 Mythread t1=new Mythread("Yuvraj");
+		 Mythread t2=new Mythread("Dhoni");
+		 t1.start();
+		 t2.start();
+
+	}
+
+}

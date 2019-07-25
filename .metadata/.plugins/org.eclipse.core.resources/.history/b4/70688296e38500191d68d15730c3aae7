@@ -1,0 +1,6 @@
+package com.testing.program1;
+
+public class TestClass {
+
+	static int x=20;
+}

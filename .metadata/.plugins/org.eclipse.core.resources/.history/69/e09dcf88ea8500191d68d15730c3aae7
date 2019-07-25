@@ -1,0 +1,14 @@
+package com.testing.program1;
+
+public class TestClass {
+     
+	int y=20;
+	 TestClass( int x){
+		System.out.println("yo bro");
+	}
+	 
+	 public void m1(){
+	     System.out.println( this.y);
+	 }
+	 
+}

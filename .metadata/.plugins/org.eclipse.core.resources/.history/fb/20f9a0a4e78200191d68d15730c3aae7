@@ -1,0 +1,24 @@
+package com.testing.program;
+
+public class StringPerformance  {
+
+	public static void main(String[] args) {
+		
+		String s= new String("Shubham");
+		
+		String S1= s;
+		
+		
+
+		int a = 5;
+		Integer b = new Integer(5);
+		int c = 5;
+
+		System.out.println(s == S1); // false
+		System.out.println(s.equals(S1)); // true
+
+				System.out.println(b.equals(a) );// true
+					
+	}
+
+}

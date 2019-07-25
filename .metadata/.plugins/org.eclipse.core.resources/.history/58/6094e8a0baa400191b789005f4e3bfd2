@@ -1,0 +1,17 @@
+package com.testing.program;
+
+public class BoomClass extends BoomClass2 {
+	
+	static BoomClass r= new BoomClass();
+	{
+		
+	}
+	
+	public BoomClass m1(){
+		return r;
+	}
+public static void main(String[] args) {
+	BoomClass b= new BoomClass();
+  
+}
+}

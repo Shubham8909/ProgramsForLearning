@@ -1,0 +1,12 @@
+package com.testing.program1;
+
+public class CheckingSuperKey {
+	
+	int a= 20;
+	CheckingSuperKey(int x){
+		System.out.println("In parent" +x);
+		System.out.println("In parent" +a);
+	}
+	
+
+}

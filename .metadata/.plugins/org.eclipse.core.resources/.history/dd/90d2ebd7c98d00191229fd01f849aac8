@@ -1,0 +1,19 @@
+package com.testing.program;
+
+public class CustomClassTest {
+	
+	public static void main(String[] args) {
+		
+		
+		Adress a= new Adress("Agra");
+		Adress a1= new Adress("Noida");
+		
+		CustomClass c= new CustomClass("Shubham", a);
+		CustomClass c1= new CustomClass("Verma", a1);
+		
+		System.out.println(c1);
+		System.out.println(c);
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.testing.program;
+
+public class Adress {
+	
+  private String adName;
+
+public String getAdName() {
+	return adName;
+}
+
+public void setAdName(String adName) {
+	this.adName = adName;
+}
+
+}

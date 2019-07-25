@@ -1,0 +1,25 @@
+package com.testing.program;
+
+public class ConstructorTest {
+	
+	int i=10;
+	String s;
+	public ConstructorTest(int i){
+		System.out.println("ConstructorTest");
+	}
+}
+class NewCons extends ConstructorTest{
+	int i;
+	public NewCons(String s){
+		this.i=i;
+		System.out.println("NewCons");
+	}
+}
+
+class ConTest{
+	public static void main(String[] args) {
+		NewCons n= new NewCons(10);
+
+	}
+
+}

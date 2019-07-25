@@ -1,0 +1,36 @@
+package com.testing.program;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Account implements Serializable {
+	
+	String name="Shubham";
+	transient Integer pin=1234;
+	transient String password="verma";
+	int accountNumer=5676456;
+	
+	private void writeObject(ObjectOutputStream oos) throws Exception{
+		System.out.println("writeObject method");
+		oos.defaultWriteObject();
+	    Integer pin= this.pin+123;
+		System.out.println(pin);
+		String pwd=this.password+"852";
+		oos.writeObject(pin);
+		oos.writeObject(pwd);
+	}
+	
+	private void readObject(ObjectInputStream ois) throws Exception{
+		System.out.println("readObject method");
+		ois.defaultReadObject();
+	    this.pin=ois.read();
+		String str=(String)ois.readObject();
+		this.password=str.substring(0, 5);
+ 
+
+		
+	}
+
+}

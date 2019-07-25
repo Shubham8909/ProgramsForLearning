@@ -1,0 +1,8 @@
+package com.testing.program1;
+
+public class TestClass {
+
+	TestClass(){
+		System.out.println("yo bro");
+	}
+}

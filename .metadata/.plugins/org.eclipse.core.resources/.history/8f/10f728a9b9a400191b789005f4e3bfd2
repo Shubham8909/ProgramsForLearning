@@ -1,0 +1,17 @@
+package com.testing.program;
+
+public class BoomClass extends BoomClass2 {
+	
+	{
+        System.out.println(methodOfY());
+    }
+ 
+    int methodOfY()
+    {
+        return m--+--m;
+    }
+public static void main(String[] args) {
+	BoomClass b= new BoomClass();
+  
+}
+}

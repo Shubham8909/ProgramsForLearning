@@ -1,0 +1,13 @@
+package com.testing.program;
+
+public class BoomClass extends BoomClass2 {
+	
+public void show(){
+	System.out.println("Hi Shubham Verma by BoomClass");
+}
+public static void main(String[] args) {
+	
+	BoomClass b= (BoomClass) new BoomClass2();
+	b.show();
+}
+}

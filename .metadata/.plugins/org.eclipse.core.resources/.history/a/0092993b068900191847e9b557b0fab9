@@ -1,0 +1,17 @@
+package com.testing.program;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class StackImplementaionByQueue {
+	//First Queue
+	Queue<Integer> q1;
+	//Second Queue
+	Queue<Integer> q2;
+	
+	public StackImplementaionByQueue(){
+		q1=new LinkedList<>();
+		q2=new LinkedList<>();
+	}
+
+}

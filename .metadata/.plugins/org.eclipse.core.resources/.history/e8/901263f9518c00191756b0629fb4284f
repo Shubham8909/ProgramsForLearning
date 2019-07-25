@@ -1,0 +1,31 @@
+package com.testing.program;
+
+import java.util.concurrent.locks.ReentrantLock;
+
+public class Mythread extends Thread {
+	
+	ReentrantLock l= new ReentrantLock();
+	public Mythread(String name){
+		super(name);
+	}
+	
+	public void run(){	
+		System.out.println(l.tryLock());
+		if(l.tryLock()){
+			System.out.println(Thread.currentThread().getName()+"got lock");
+
+			try {
+				System.out.println("in");
+				Thread.sleep(78000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			l.unlock();
+			
+		}else{
+			System.out.println(Thread.currentThread().getName()+"with out lock");
+		}
+		
+	}
+
+}

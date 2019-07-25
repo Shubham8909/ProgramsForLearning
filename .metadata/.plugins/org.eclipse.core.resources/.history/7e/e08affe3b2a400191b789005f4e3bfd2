@@ -1,0 +1,20 @@
+package com.testing.program;
+
+public class BoomClass implements Boom {
+	
+public void m1(){
+		System.out.println("I am class default method.");
+	}
+
+  static void m2(){
+	System.out.println("I am interface default method.");
+}
+
+public static void main(String[] args) {
+	BoomClass b= new BoomClass();
+	b.m1();
+	
+	
+}
+
+}

@@ -1,0 +1,15 @@
+package com.testing.program1;
+
+public class ThreadTest extends ConcurrentThread{
+
+	public static void main(String[] args) {
+		
+		c.add(1);
+		c.add(2);
+		c.add(3);
+		c.add(4);
+		
+		
+	}
+
+}

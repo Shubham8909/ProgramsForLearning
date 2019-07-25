@@ -1,0 +1,31 @@
+package com.project.restful.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.project.model.Person;
+
+@Controller
+public class MyController {
+	@ResponseBody
+	@RequestMapping(value="/fatigue/", method = RequestMethod.GET)
+	public List<Person> helloMassage()
+	{
+		
+		List<Person> pList= new ArrayList<>();
+	Person p= new Person("Shubham", 1, "Agra", "7599587374", "25/03/2019");
+	System.out.println("hello bro");
+	return "Shubham";
+		
+	}
+	
+
+}

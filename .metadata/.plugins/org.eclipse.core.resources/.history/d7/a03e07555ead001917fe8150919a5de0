@@ -1,0 +1,11 @@
+package com.testing.program1;
+
+public class ClassAimple extends ClassTesting {
+	
+
+		 void m(){
+			setDataSource("verma");
+		}
+		                                                                                                                                                                                                       
+
+}

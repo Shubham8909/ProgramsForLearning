@@ -1,0 +1,22 @@
+package com.testing.program;
+
+public class ReverseStringWord {
+
+	public static void main(String[] args) {
+		String s1="";
+		 String s= "Hello Shubham What are You Doing";
+		 System.out.println(s);
+		 String [] str=s.split(" ");
+		 
+		 for(int i=str.length; i<=0; i--){
+			
+			 
+				 s1=s1+str[i]+" ";
+			
+		 }
+		 
+		 System.out.println(s1);
+
+	}
+
+}

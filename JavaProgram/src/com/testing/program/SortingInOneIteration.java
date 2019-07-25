@@ -1,0 +1,64 @@
+package com.testing.program;
+
+public class SortingInOneIteration {
+	
+	
+/*	public void sortingInOneIteration( int [] arr){
+		
+		int n= arr.length;
+		int j=-1;
+		for(int i=0; i<n; i++){
+			if(arr[i]<1){
+				j++;
+				int temp=arr[j];
+				arr[j]=arr[i];
+				arr[i]= temp;
+			}
+			
+		}
+		
+	}*/
+	public void sortingInOneIteration1( int [] arr){
+		
+		int n= arr.length;
+		int count=0;
+		System.out.println("Lenght of array"+n);
+		System.out.println("call");
+		for(int i=1; i<n; i++){
+			count++;
+			System.out.println("call"+i);
+			if(arr[i]<arr[i-1]){
+				int temp=arr[i];
+				arr[i]=arr[i-1];
+				arr[i-1]= temp;
+				i=0;
+			}
+			
+			
+		}
+		System.out.println("Iteartion loop"+count);
+		
+	}
+	
+	public static void main(String[] args) {
+		SortingInOneIteration s= new SortingInOneIteration();
+		
+		int [] arr= {1, 0 , 1, 1, 0 ,1 , 1 ,0, 1,0, 1, 1, 0, 0, 0};
+		
+		////s.sortingInOneIteration(arr);
+		s.sortingInOneIteration1(arr);
+		
+		for(int i=0; i<arr.length;i++){
+			if(i==0)
+			System.out.print("{");
+			if(i<arr.length-1)
+			System.out.print(arr[i]+", ");
+			else{
+				System.out.print(arr[i]+"} ");
+			}
+			
+		}
+		
+	}
+
+}

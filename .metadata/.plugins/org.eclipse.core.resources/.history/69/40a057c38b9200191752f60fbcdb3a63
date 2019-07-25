@@ -1,0 +1,22 @@
+package com.testing.program;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class ListIteratorTesting {
+
+	public static void main(String[] args) {
+	
+		ArrayList<Integer> al= new ArrayList<>();
+		al.add(1);
+		al.add(2);
+		al.add(3);
+		al.add(4);
+		al.add(5);
+		System.out.println(al);
+		al.remove(1);
+		System.out.println(al);
+
+	}
+
+}

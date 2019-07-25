@@ -1,0 +1,11 @@
+package com.testing.program;
+
+public class BClass  implements Connection1 {
+
+	@Override
+	public void getName() {
+		System.out.println("I am in B Class");
+		
+	}
+
+}
